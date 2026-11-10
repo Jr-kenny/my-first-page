@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenneth — My First Page</title>
+  <style>
+    body { background: #1a1a2e; color: #eee; font-family: sans-serif; margin: 0; line-height: 1.6; }
+    h1 { color: #e94560; }
+    h2 { color: #53d8fb; }
+    a { color: #53d8fb; }
+    header, main, footer { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+    nav { padding: 16px 0; }
+    nav a { margin-right: 16px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .btn { display: inline-block; background: #0f766e; color: #fff; padding: 10px 18px; border-radius: 8px; text-decoration: none; margin: 6px 8px 6px 0; }
+    .btn:hover { background: #14a098; }
+    .card { background: #23233f; border: 1px solid #33335a; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    img.photo { border-radius: 12px; border: 2px solid #0f766e; max-width: 100%; height: auto; }
+    form label { display: block; margin: 12px 0 4px; font-weight: bold; }
+    form input, form textarea { width: 100%; box-sizing: border-box; padding: 10px; border-radius: 8px; border: 1px solid #33335a; background: #23233f; color: #eee; font-family: sans-serif; }
+    form button { background: #e94560; color: #fff; border: none; padding: 12px 22px; border-radius: 8px; font-size: 1rem; cursor: pointer; margin-top: 14px; }
+    form button:hover { background: #f25c74; }
+    footer { color: #999; font-size: 0.9rem; padding-bottom: 30px; }
+    footer .owner { color: #53d8fb; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">My Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Hello, I'm Kenneth</h1>
+    <p>I'm a developer from Nigeria. I build AI agents, developer infrastructure, and Web3 things — and I write about what I learn along the way.</p>
+
+    <img class="photo" src="photo.svg" width="600" alt="Illustration for Kenneth's first page — code brackets and circuit lines in teal on a dark background">
+
+    <div class="card">
+      <h2>What I build</h2>
+      <p>I run <strong>Prime Isles</strong> — a small lab where I build, experiment, and ship. Two of my projects:</p>
+      <ul>
+        <li><strong>Prime Way</strong> — send money across chains, simply.</li>
+        <li><strong>OneShot</strong> — a guard that keeps AI agents from double-spending when a trade is delayed or outbid on-chain.</li>
+      </ul>
+      <p>See more on my <a href="projects.html">projects page</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Find me online</h2>
+      <a class="btn" href="https://github.com/Jr-kenny">GitHub — Jr-kenny</a>
+      <a class="btn" href="https://prime-isles.pxxlspace.cv">Prime Isles</a>
+      <a class="btn" href="https://x.com/Jrken_ny">X — @Jrken_ny</a>
+    </div>
+
+    <div class="card">
+      <h2>Contact me</h2>
+      <p>Want to talk about a project, a bug, or an idea? Send me a message — the form goes straight to my inbox.</p>
+      <!-- TODO (Web Dev 3): replace PLACEHOLDER-FORMSPREE-ID with the real Formspree form ID.
+           Free, no card: create the form at https://formspree.io (sign up, New Form, copy the
+           endpoint https://formspree.io/f/xxxxxxx) and paste it below. Then test it by sending
+           a message and screenshotting it arriving in the Formspree dashboard/inbox. -->
+      <form action="https://formspree.io/f/PLACEHOLDER-FORMSPREE-ID" method="POST">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>Built by Kenneth — my first page, hosted free on GitHub Pages.</p>
+    <p class="owner">satsboard PLACEHOLDER-LIGHTNING-ADDRESS</p>
+  </footer>
+</body>
+</html>
